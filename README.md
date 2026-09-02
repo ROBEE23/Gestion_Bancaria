@@ -41,3 +41,4 @@ Se implementó una interfaz de consola con menús interactivos para que el usuar
 ## Ejecución
 ```bash
 python main.py
+**Autor-Roberto Alexis Cisneros Vazquez_ROBEE23
