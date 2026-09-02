@@ -8,3 +8,18 @@ CLI bancario desarrollado en Python orientado a objetos con operaciones financie
 
 Descripción extendida (README):
 Sistema bancario de consola desarrollado en Python aplicando principios de Programación Orientada a Objetos (POO). El proyecto permite a los usuarios aperturar cuentas, consultar saldos, realizar depósitos, retirar dinero y efectuar transferencias entre cuentas activas de forma segura. La aplicación almacena el estado de las cuentas localmente en formato JSON, garantizando la persistencia de los datos sin depender de bases de datos externas.
+# Bank System CLI
+
+Simulador de operaciones bancarias mediante línea de comandos implementado en Python utilizando Programación Orientada a Objetos (POO).
+
+## Características
+- Generación de números de cuenta aleatorios de 5 dígitos.
+- Depósitos, retiros y transferencias entre cuentas activas.
+- Persistencia de datos local en formato JSON.
+
+## Requisitos
+- Python 3.8+
+
+## Ejecución
+```bash
+python main.py
