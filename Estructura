@@ -1,0 +1,5 @@
+bank-system/
+├── main.py
+├── bank.json (se genera automáticamente)
+├── README.md
+└── .gitignore
