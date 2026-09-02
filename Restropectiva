@@ -1,0 +1,23 @@
+1. ¿Qué funcionó bien?
+
+Modelado Orientado a Objetos (POO): La división de clases (Cliente, CuentaBancaria, Banco) permitió abstraer claramente la lógica financiera, facilitando la creación de operaciones como depósitos, retiros y validación de saldos.
+
+Persistencia ligera con JSON: El uso de archivos JSON como base de datos local funcionó de forma fluida para guardar y recuperar la información de los usuarios y transacciones sin necesidad de configurar un servidor de base de datos complejo.
+
+Navegación interactiva: La implementación de menús en consola organizados por módulos permitió probar de forma clara el flujo que realiza un usuario al consultar o modificar su cuenta.
+
+2. ¿Qué no funcionó bien / Nos costó trabajo?
+
+Manejo de excepciones y errores de entrada: Validar que el usuario no ingresara letras en campos numéricos (como en el monto de depósito) o valores negativos requirió múltiples comprobaciones para evitar que la aplicación se detuviera abruptamente.
+
+Integridad y sincronización del archivo JSON: Asegurar que los datos se guardaran correctamente tras cada transacción sin sobrescribir o corromper el formato del archivo requirió atención especial durante la lógica de lectura/escritura.
+
+Mapeo de objetos a JSON: Traducir los objetos de las clases Python a diccionarios compatibles con serialización JSON (y viceversa) generó fricción inicial al estructurar la carga de datos.
+
+3. ¿Qué haría distinto la próxima vez?
+
+Migración a un SGBD Relacional (SQL): En lugar de archivos JSON, implementaría SQL Server o SQLite para delegar el control de transacciones, claves primarias y relaciones al motor de la base de datos.
+
+Interfaz Gráfica de Usuario (GUI): Reemplazar la interfaz de consola por una interfaz basada en la interfaz gráfica (como Tkinter o CustomTkinter) para mejorar la experiencia de usuario.
+
+Modularización de archivos: Separar las clases, la lógica de persistencia y la interfaz de consola en archivos o módulos .py independientes desde el inicio del proyecto para mantener un código más limpio y fácil de mantener.
